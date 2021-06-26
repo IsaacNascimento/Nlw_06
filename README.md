@@ -14,12 +14,12 @@
 
   [ x ] Não é permitido cadastrar tag sem nome
   
-  [ ] Não é permitido o cadastro por usuário que não sejam administradores
+  [ x ] Não é permitido o cadastro por usuário que não sejam administradores
 
 - Cadastro de elogios
 
-  [ ] Não é permitdo um usuário cadastrar um elogio para si
+  [ x ] Não é permitdo um usuário cadastrar um elogio para si
 
-  [ ] Não é permitido castrar elogios para usuários inválidos
+  [ x ] Não é permitido castrar elogios para usuários inválidos
 
-  [ ] O usuário precisa estar autenticado na aplicação
+  [ x ] O usuário precisa estar autenticado na aplicação
