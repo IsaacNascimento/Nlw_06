@@ -1,0 +1,7 @@
+/**
+ * GET => Buscar uma informação
+ * POST => Inserir uma informação
+ * PUT => Alterar uma informação
+ * DELETE => Deletar uma informação
+ * PATCH => Alterar uma informação específica
+ */

@@ -1,0 +1,207 @@
+Nlw - Valoriza 
+
+ - Cadastro de usuário
+ - Cadastro de tags (Elogios)
+   . Somente usuário administrador
+ 
+ - Cadastro de elogios
+   . Id user que receber elogios
+   . Id user que envia elogios
+   . Id da tag
+   . Data da criação
+ 
+ - Autentição de usuário
+   . Gerar token JWT
+   . Validar user logados nas rotas necessárias
+
+ - Listagem de user
+ - Listagem de tags
+ - Listagem de elogios por user
+
+________________________________________________________________________
+
+Installs:
+
+1) Gerenciador de pacotes 
+
+npm install --global yarn
+
+________________________________________________________________________
+
+2) Começar um projeto:
+
+yarn init -y  (-y usar nomes da pasta como padrão)
+
+adiona o packge.json
+
+__________________________________________________________________________
+
+3) Adcionar o typeScript como dependência no projeto:
+yarn add typescript -D
+
+adiciona a pasta node_modules e o yarn_lock
+__________________________________________________________________________
+
+4) Iniciar o typescript no projeto:
+
+yarn tsc --init
+
+adiciona o tsconfig.json
+__________________________________________________________________________
+
+5) Converter o typescript no projeto para o node reconher o Ts:
+
+yarn tsc
+
+adiciona o index.js
+__________________________________________________________________________
+
+6) Rodar um arquivo especifico
+node index.js
+
+__________________________________________________________________________
+
+7) Adiciona o express no projeto
+
+yarn add express
+
+__________________________________________________________________________
+
+8) Instalar as tipagens como dependência no projeto
+
+yarn add @types/express -D
+
+__________________________________________________________________________
+
+9) Biblioteca que converte o Ts pra uma forma que o node consiga entender
+
+yarn add ts-node-dev -D
+
+adcionar no arquivo packge.json
+
+"scripts": {
+     "dev": "ts-node-dev src/server.ts" 
+  },
+
+__________________________________________________________________________
+
+10) Iniciar o servidor
+
+yarn dev 
+__________________________________________________________________________
+
+11) Iniciar o servidor
+
+yarn dev
+__________________________________________________________________________
+
+12) Gerenciador de Bd
+
+yarn add typeorm reflect-metadata sqlite3
+
+=> adicionar na linha 1 serve.ts:
+     . import "reflect-metadata";
+__________________________________________________________________________
+
+13) Criar migration
+
+yarn typeorm migration:create -n CreateUsers
+__________________________________________________________________________
+
+14) Rodar a migration
+
+yarn typeorm migration:run
+
+=> Adicionar no arquivo ormconfig.json
+"migrations": ["src/database/migrations/*.ts"],
+__________________________________________________________________________
+
+15) Deleter a migration
+
+yarn typeorm migration:revert
+
+__________________________________________________________________________
+
+16) Criar uma entidade
+
+yarn typeorm entity:create -n User
+
+=> Adicionar no arquivo ormconfig.json
+ "cli": {
+      "migrationsDir": "src/database/migrations",
+      "entitiesDir": "src/entities"
+    }
+__________________________________________________________________________
+
+17) Adicionar biblioteca - Id
+
+yarn add uuid
+
+yarn add @types/uuid -D
+__________________________________________________________________________
+
+
+Fluxo de requisições da aplicação:
+
+server -> routes -> Controller -> Service (Throw new Error)
+
+__________________________________________________________________________
+
+18) Adiciona biblioteca responsável pelo express conseguir capturar os erros
+
+yarn add express-async-errors
+__________________________________________________________________________
+
+https://www.typescriptlang.org/docs/
+
+Documentação do Ts
+__________________________________________________________________________
+
+20) Adiciona biblioteca  (https://jwt.io/)
+
+yarn add jsonwebtoken
+
+yarn add @types/jsonwebtoken -D
+__________________________________________________________________________
+
+21) Adiciona biblioteca de criptografia
+
+yarn add bcryptjs
+
+yarn add @types/bcryptjs -D
+
+__________________________________________________________________________
+
+22) Adiciona biblioteca 
+
+yarn add class-transformer
+__________________________________________________________________________
+
+__________________________________________________________________________
+
+__________________________________________________________________________
+
+__________________________________________________________________________
+
+__________________________________________________________________________
+
+__________________________________________________________________________
+
+__________________________________________________________________________
+
+__________________________________________________________________________
+
+__________________________________________________________________________
+
+__________________________________________________________________________
+
+__________________________________________________________________________
+
+__________________________________________________________________________
+
+__________________________________________________________________________
+
+__________________________________________________________________________
+
+__________________________________________________________________________
+

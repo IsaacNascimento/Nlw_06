@@ -1,0 +1,11 @@
+
+/**
+ * Tipos de parâmetros 
+ * Routes Params => http://localhost:3000/produtos/6587491  // Parametros obrigatórios, definidos
+ * Query Params => http://localhost:3000/produtos?name=produto=teclado&&description:Azul  // Parametros não obrigatórios, indefinidos
+ * 
+ *  Body Params => {
+ *   "name": "teclado",
+ *   "description": "Azul"
+ * }
+ */
